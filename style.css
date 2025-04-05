@@ -231,7 +231,7 @@ top: -300px;
 
 
 
-/* About Us Card - Image Left, Text Right */
+
 .AboutUs-card2 {
     display: flex;
     align-items: center;
@@ -241,9 +241,10 @@ top: -300px;
     margin: 0 auto;
     text-align: left;
     position: relative;
+    /* right: 50px; */
 }
 
-/* Image */
+
 .AboutUs-card2 img {
     width: 700px;
     height: auto;
@@ -251,7 +252,7 @@ top: -300px;
     /* right: 5%; */
 }
 
-/* Blue Background Block Behind Image */
+
 .AboutUs-card2::before {
     content: "";
     position: absolute;
@@ -263,11 +264,12 @@ top: -300px;
     border-radius: 20px;
 }
 
-/* Text Section */
+
 .AboutUs-content {
     max-width: 500px;
     position: relative;
     z-index: 3;
+    /* margin-left: 40px; */
 }
 
 .AboutUs-content h3 {
@@ -283,7 +285,6 @@ top: -300px;
     line-height: 1.8;
 }
 
-/* Button */
 .AboutUs-content button {
     background-color: black;
     color: white;
@@ -698,81 +699,7 @@ top: -300px;
     display: block;
   }
   
-  
 
-
-/* 
-
-@media (max-width: 768px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px;
-    }
-
-    .menu-toggle {
-        background: none;
-        border: none;
-        color: white;
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #0D5EFF;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links button, .nav-links p {
-        padding: 10px;
-    }
-
-    .header, .AboutUs, .OurClient, .testimonial, .download, .subscribeContainer {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .AboutUs-card, .download {
-        flex-direction: column;
-       
-        flex-wrap: wrap;
-        overflow: hidden;
-    }
-
-  
-
-    .AboutUs-card img, .download img {
-     
-        max-width: 100px;
-       
-        display: block;
-        
-        
-    }
-    
-    .testiCard-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .subscribeContainer {
-        flex-direction: column;
-        text-align: center;
-    }
-}  
- */
 
 
  @media (max-width: 1200px) {
@@ -961,7 +888,7 @@ top: -300px;
     }
 }
 
-/* Navigation for Mobile - To be controlled by JavaScript */
+
 .nav-mobile {
     display: none;
     position: fixed;
@@ -1014,15 +941,15 @@ top: -300px;
     top: 500px;
    width: 25px;
    
-    /* left: 0; */
+   
     transform: translateY(-150%) translateX(50%);
-    /* transform: translateX(70%); */
-    background-color: #1E63FF; /* or use #0D5EFF */
+  
+    background-color: #1E63FF; 
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px; /* space between icons */
+    gap: 40px; 
     border-radius: 20px 20px ;
     z-index: 999;
   }

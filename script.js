@@ -11,22 +11,20 @@ document.addEventListener('DOMContentLoaded', function() {
         const faqItem = btn.closest('.faq-item');
         const answer = faqItem.querySelector('.faq-answer');
     
-        // Toggle visibility
+        
         answer.classList.toggle('show');
     
-        // Change icon (rotate or change to minus)
         const icon = btn.querySelector('.icon');
         const verticalLine = icon.querySelector('line[x1="12"][y1="5"]');
     
         if (answer.classList.contains('show')) {
-          verticalLine.style.display = 'none'; // Turn into minus
+          verticalLine.style.display = 'none'; 
         } else {
-          verticalLine.style.display = 'block'; // Turn into plus
+          verticalLine.style.display = 'block'; 
         }
       });
     });
     
-    // Handle resize events
     window.addEventListener('resize', function() {
         if (window.innerWidth > 768) {
             navMobile.classList.remove('active');
